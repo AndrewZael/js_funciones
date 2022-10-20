@@ -15,9 +15,8 @@ document.addEventListener('keydown', function(e){
 });
 
 const colorEvent = function(idBox){
-    const box = document.getElementById(idBox);
-    box.addEventListener('click', function(){
-        box.style.backgroundColor = color;
+    document.getElementById(idBox).addEventListener('click', function(){
+        this.style.backgroundColor = color;
     });
 };
 
